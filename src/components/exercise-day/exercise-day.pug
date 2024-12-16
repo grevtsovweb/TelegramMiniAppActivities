@@ -1,0 +1,41 @@
+include ../exercise-card/exercise-card
+
+
+
+mixin exerciseDay(isDone)
+    .exercise-day
+        .exercise-day__date
+            span 1 
+            span.exercise-day__date-text день
+        .exercise-card__block
+            +exercise-card(isDone)
+            //- .exercise-card
+            //-     .exercise-card__data
+            //-         .exercise-card__data-title Супер-серия
+            //-         .exercise-card__data-time 20 мин
+            //-     .exercise-card__list
+            //-         .exercise-card__item(tabindex)
+            //-             a(href="#").exercise-card__item-link
+            //-             span.exercise-card__item-thumb 
+            //-                 if isDone
+            //-                     span.exercise-card__item-done
+            //-                         span.exercise-card__item-done-icon
+            //-                             +svg(24, 24, "check-circle")
+            //-                 img(src="img/exercise/exercise.webp", alt="Улучшаем подвижность позвоночника")
+            //-             span.exercise-card__item-title Улучшаем подвижность позвоночника 
+            //-         .exercise-card__item(tabindex)
+            //-             a(href="#").exercise-card__item-link 
+            //-             span.exercise-card__item-thumb 
+            //-                 if isDone
+            //-                     span.exercise-card__item-done
+            //-                         span.exercise-card__item-done-icon
+            //-                             +svg(24, 24, "check-circle")
+            //-                 img(src="img/exercise/exercise.webp", alt="Улучшаем подвижность позвоночника")
+            //-             span.exercise-card__item-title Гибкость и баланс
+            //-     .exercise-card__button
+
+            //-         if !isDone
+            //-             +button('Выполнить', 'button--full-width', false)
+            //-         else
+            //-             +button-right('Выполнено', 'button--secondary button--secondary-positive button--full-width', false ,'check')
+                    

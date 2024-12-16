@@ -1,0 +1,44 @@
+.tabs
+    display: flex
+    column-gap: $space-8
+    flex-wrap: nowrap
+    width: fit-content
+
+    &__button
+        font-size: $base-text
+        font-size: 14px
+        line-height: 20px
+        border: 1px solid $border-default
+        padding-left: 15px
+        padding-right: 15px
+        padding-top: 9px
+        padding-bottom: 9px
+        background-color: $background-white
+        border-radius: $radius-32
+        font-family: $semibold
+        box-sizing: border-box
+        transition: .2s ease
+        white-space: nowrap
+        flex-shrink: 0
+        cursor: pointer
+        -webkit-tap-highlight-color: transparent
+
+        &:hover
+            background-color: $background-secondary
+            color: $text-accent
+            border-color: $border-accent-secondary
+
+        &:focus
+            outline: none
+
+        &:active
+            background-color: $background-secondary-active
+            color: $text-accent
+            border-color: $border-accent-secondary
+                   
+
+        &.active
+            background-color: $background-secondary
+            color: $text-accent
+            border-color: $border-accent-secondary
+

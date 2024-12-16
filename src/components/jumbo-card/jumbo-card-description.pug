@@ -1,0 +1,13 @@
+include ../pill/pill
+include ../button/button-link
+
+.jumbo-card.jumbo-card--align-left(style="background-image: url('img/jumbo-card/day-1.webp')")
+    .jumbo-card__content
+        .jumbo-card__pill
+            +pill('pill--accent', 'Бесплатно')
+        .jumbo-card__description 
+            .jumbo-card__description-header
+                .title.title--inverse Бесплатные рекомендации от&nbsp;тренеров
+                .jumbo-card__description-text Получите консультацию от&nbsp;тренеров, после которой вы точно будете знать, какие шаги необходимо сделать именно вам для быстрого и&nbsp;эффективного достижения результатов.
+            .jumbo-card__description-button
+                +button-link('Получить консультацию', 'button--full-width')

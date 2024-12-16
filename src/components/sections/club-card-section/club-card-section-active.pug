@@ -1,0 +1,58 @@
+include ../../list-item/list-item
+include ../../radio-button/radio-button
+include ../../pill/pill
+
+.club-card-section
+    .club-card-section__price-form-top
+        .club-card-section__price-form-header
+            .club-card-section__price-form-tag
+                +pill('pill--positive-secondary', 'Карта активна до 15 февраля')
+            .club-card-section__price-form-title 
+                h2.title Можно продлить со скидкой -15%
+        form(action="#").form
+            .form__fields
+                label.radio-button
+                    input(type="radio" name="price", value="620", id="price-1")
+                    span.radio-button__content 
+                        span.radio-button__text  1 месяц за 
+                            span.radio-button__text-price 
+                                span.radio-button__text-price-old 790 ₽ 
+                                | 620 ₽
+                        span.radio-button__checkbox
+                            +svg('20', '20', 'check')
+                label.radio-button
+                    input(type="radio" name="price", value="790", id="price-2")
+                    span.radio-button__content 
+                        span.radio-button__text  3 месяц за
+                            span.radio-button__text-price 
+                                span.radio-button__text-price-old 2070 ₽
+                                | 1800 ₽ 
+                        span.radio-button__checkbox
+                            +svg('20', '20', 'check')
+                label.radio-button
+                    input(type="radio" name="price", value="790", id="price-3")
+                    span.radio-button__content 
+                        span.radio-button__text  9 месяц за
+                             span.radio-button__text-price 
+                                span.radio-button__text-price-old 5370 ₽
+                                | 5000 ₽  
+                        span.radio-button__checkbox
+                            +svg('20', '20', 'check')
+            .form__button
+                +button('Оформить за 790 ₽', 'button--full-width button--l')
+    .club-card-section__image(style="background-image: url('img/product/product.webp')" )
+    
+    .club-card-section__content
+        .club-card-section__header 
+            .club-card-section__subtitle Клубная карта
+            .club-card-section__title
+                h1.title Откройте доступ к плафторме Pilates Flow по Клубной карте
+
+        .club-card-section__list 
+            +list-item('calendar', 'Более 200 классов по 5 направлениям: пилатес, растяжка, МФР, балет, функицональный тренинг')
+            +list-item('layers', 'Доступ к уникальным супер-сериям для комплексной проработки всего тела')
+            +list-item('user-check', 'Тематические недели с заданиями от экспертов')
+            +list-item('comment-check', 'Поддержка и забота кураторов команды Pilates Flow')
+
+        
+    

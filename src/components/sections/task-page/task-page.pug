@@ -1,0 +1,15 @@
+include ../../tabs/tabs
+
+.task-page
+    .task-page__coach-block
+        include ../../coach-block/coach-block
+    .task-page__current-task
+        include ../../jumbo-card/jumbo-card
+    .task-page__personal-section
+        .task-page__personal-section-header
+            h1.title Персональная программа
+        .task-page__tabs
+            +tabs()
+        .task-page__exercise-list
+            +exerciseDay(true)
+            +exerciseDay(false)

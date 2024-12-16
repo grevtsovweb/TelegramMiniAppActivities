@@ -1,0 +1,64 @@
+include ../components/mixins/svg
+include ../components/button/button
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        title Telegram Mini App 
+        meta(name="description", content="Telegram Mini App")
+        meta(name="keywords", content="Telegram Mini App")
+
+
+    body
+        style(type="text/css").
+            li {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            ul, ol {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 16px;
+            }
+
+            .new {
+                background-color: #e0ffe6;
+            }
+        ol
+            li
+                a(href="loading-page-demo.html") Экран загрузки 
+                ul
+                    li
+                        a(href="loading-page.html") Экран загрузки (С классами анимации)
+            li
+                a(href="activities-page.html") Активности
+            li 
+                a(href="bottom-sheet-community.html") Подписаться на сообщество
+                ul
+                    li
+                        a(href="bottom-sheet-community-checking.html") Проверка подписки
+                    li
+                        a(href="bottom-sheet-community-processing.html") Идет проверка
+                    li
+                        a(href="bottom-sheet-community-success.html") Вы подписаны
+                    li
+                        a(href="bottom-sheet-community-book-send.html") Уведомление(Подборка отправлена)
+                    li
+                        a(href="bottom-sheet-community-success-sign-up.html") Уведомление(Успешная регистрация)
+            li 
+                a(href="bottom-sheet-mail.html") Подписаться на рассылку
+ 
+
+
+
+        
+        

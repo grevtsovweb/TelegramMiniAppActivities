@@ -1,0 +1,41 @@
+include ../../list-item/list-item
+include ../../radio-button/radio-button
+
+.club-card-section
+    .club-card-section__image(style="background-image: url('img/product/product.webp')" )
+    
+    .club-card-section__content
+        .club-card-section__header 
+            .club-card-section__title
+                h1.title Укажите свой Email для регистрации
+
+        .club-card-section__list 
+            +list-item('calendar', 'Более 200 классов по 5 направлениям: пилатес, растяжка, МФР, балет, функицональный тренинг')
+            +list-item('layers', 'Доступ к уникальным супер-сериям для комплексной проработки всего тела')
+            +list-item('user-check', 'Тематические недели с заданиями от экспертов')
+            +list-item('comment-check', 'Поддержка и забота кураторов команды Pilates Flow')
+
+        .club-card-section__price-form
+            form(action="#").form
+                .form__fields
+                    label.radio-button
+                        input(type="radio" name="price", value="790", id="price-1")
+                        span.radio-button__content 
+                            span.radio-button__text  1 месяц за 790 ₽
+                            span.radio-button__checkbox
+                                +svg('20', '20', 'check')
+                    label.radio-button
+                        input(type="radio" name="price", value="790", id="price-2")
+                        span.radio-button__content 
+                            span.radio-button__text  3 месяц за 2070 ₽
+                            span.radio-button__checkbox
+                                +svg('20', '20', 'check')
+                    label.radio-button
+                        input(type="radio" name="price", value="790", id="price-3")
+                        span.radio-button__content 
+                            span.radio-button__text  9 месяц за 5370 ₽
+                            span.radio-button__checkbox
+                                +svg('20', '20', 'check')
+                .form__button
+                    +button('Оформить за 790 ₽', 'button--full-width button--l')
+    

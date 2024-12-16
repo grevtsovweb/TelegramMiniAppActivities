@@ -1,0 +1,78 @@
+html
+    margin: 0
+    padding: 0
+    
+
+
+body
+    margin: 0
+    padding: 0
+    font-size: 16px
+    line-height: 24px
+    color: $base-text
+    font-family: $regular
+
+
+.app
+    min-height: 100vh
+    display: flex
+    overflow: hidden
+
+    &__content
+        // padding-bottom: 82px
+        width: 100%
+        max-width: 600px
+        margin-left: auto
+        margin-right: auto
+        overflow: hidden
+       
+        @media screen and ( min-width:  600px)
+            border-left: 1px solid $border
+            border-right: 1px solid $border
+        // box-sizing: border-box
+
+
+    &__button-panel
+        padding-left: $padding-16
+        padding-right: $padding-16
+        padding-bottom: $padding-32
+        padding-top: $padding-16  
+        position: fixed
+        bottom: 0
+        right: 0
+        left: 0
+        display: flex
+        column-gap: 16px
+
+    &__nav-bar
+        position: fixed
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: 2
+        display: flex
+        justify-content: center
+        display: flex
+        justify-content: center
+
+    &__nav-bar-content
+        width: 100%
+        max-width: 600px
+
+
+
+    &__snackbar
+        position: fixed
+        content: ''
+        left: 20px
+        right: 20px
+        display: flex
+        justify-content: center
+        bottom: 100px
+        z-index: 10
+
+
+.unscrollable
+    overflow-y: hidden
+
+        

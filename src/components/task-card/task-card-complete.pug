@@ -1,0 +1,15 @@
+include ../mixins/svg
+
+.task-card.task-card--complete(tabindex)
+    a(href="#").task-card__link
+    .task-card__thumb-image
+        img(src="img/task-card/thumb.webp", alt="Упражнение для лопаток")
+        span.task-card__complete-indicator
+            span.task-card__complete-indicator-icon
+                +svg("20", "20", "check-circle")
+    .task-card__content
+        .task-card__title Гибкость запястий
+        .task-card__time 
+            .task-card__time-icon 
+                 +svg(16, 16, "clock")
+            | 8 минут

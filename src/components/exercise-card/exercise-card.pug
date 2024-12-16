@@ -1,0 +1,46 @@
+mixin exercise-card(isDone)
+    
+    if !isDone
+        .exercise-card.exercise-card--complete
+            .exercise-card__data
+                .exercise-card__data-title Супер-серия
+                .exercise-card__data-time 20 мин
+            .exercise-card__list
+                .exercise-card__item(tabindex)
+                    a(href="#").exercise-card__item-link 
+                    span.exercise-card__item-thumb 
+                        span.exercise-card__item-done
+                            span.exercise-card__item-done-icon
+                                +svg(24, 24, "check-circle")
+                        img(src="img/exercise/exercise.webp", alt="Улучшаем подвижность позвоночника")
+                    span.exercise-card__item-title Улучшаем подвижность позвоночника 
+                .exercise-card__item(tabindex)
+                    a(href="#").exercise-card__item-link 
+                    span.exercise-card__item-thumb 
+                        span.exercise-card__item-done
+                            span.exercise-card__item-done-icon
+                                +svg(24, 24, "check-circle")
+                        img(src="img/exercise/exercise.webp", alt="Улучшаем подвижность позвоночника")
+                    span.exercise-card__item-title Гибкость и баланс
+            .exercise-card__button
+                +button-right('Выполнить', 'button--secondary-positive button--full-width button--l', false, 'check')
+
+
+    else
+        .exercise-card
+            .exercise-card__data
+                .exercise-card__data-title Супер-серия
+                .exercise-card__data-time 20 мин
+            .exercise-card__list
+                .exercise-card__item(tabindex)
+                    a(href="#").exercise-card__item-link 
+                    span.exercise-card__item-thumb 
+                        img(src="img/exercise/exercise.webp", alt="Улучшаем подвижность позвоночника")
+                    span.exercise-card__item-title Улучшаем подвижность позвоночника 
+                .exercise-card__item(tabindex)
+                    a(href="#").exercise-card__item-link 
+                    span.exercise-card__item-thumb 
+                        img(src="img/exercise/exercise.webp", alt="Улучшаем подвижность позвоночника")
+                    span.exercise-card__item-title Гибкость и баланс
+            .exercise-card__button
+                +button('Выполнить', 'button--full-width button--l', false)

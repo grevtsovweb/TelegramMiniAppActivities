@@ -1,0 +1,27 @@
+.achieve-section
+    .achieve-section__image(style="background-image: url('img/product/product.webp')")
+    .achieve-section__content
+        .achieve-section__header 
+            .achieve-section__title
+                .title Укажите свой Email для регистрации
+            p.description Мастер-классы проходят в студии Pilates Flow. Оставьте свой Email, мы создадим для вас аккаунт и пришлем приглашение в день старта активности
+
+        .achieve-section__about
+            .achieve-section__about-header
+                .title.title--s Получите Клубную карту в подарок при регистрации
+
+            .achieve-section__list
+                +list-item-line('star', '200+ классов')
+                +list-item-line('star', 'Тематические недели')
+                +list-item-line('star', 'Супер-серии') 
+                +list-item-line('star', 'Поддержки кураторов') 
+                +list-item-line('star', 'Доступ к сезонным новинкам') 
+
+        .achieve-section__form
+            form.form(action="#") 
+                .form__fields
+                    .form__fields-row
+                        .field
+                            input.field__input(type="text" placeholder="E-mail")
+                .form__button
+                    +button('Зарегистрироваться', 'button--full-width')

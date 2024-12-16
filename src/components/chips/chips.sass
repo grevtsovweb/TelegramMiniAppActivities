@@ -1,0 +1,47 @@
+.chips
+    display: inline-flex
+    align-items: center
+    height: 24px
+    padding-left: 6px
+    padding-right: 8px
+    // border: 1px solid $border
+    box-sizing: border-box
+    border-radius: 4px
+    background-color: #eff6ff
+    color: $accent
+
+
+    &__icon
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 16px
+        height: 16px
+        margin-right: 6px
+
+        svg
+            width: 100%
+            height: 100%
+            fill: $accent
+
+    &__text
+        font-size: 12px
+        line-height: 16px
+        font-family: $semibold
+        white-space: nowrap
+        // color: $secondary-text
+
+    
+    &--no-icon
+        padding-left: 8px
+
+    &--warning
+        background-color: $orange
+        color: $white
+
+    &--complete
+        background-color: $success-light
+        color: $success
+
+        .chips__icon svg
+            fill: $success

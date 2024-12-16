@@ -1,0 +1,19 @@
+include ../button/button-link
+
+.jumbo-card.jumbo-card--with-info
+    .jumbo-card__video(style="background-image: url('img/jumbo-card/day-1.webp')")
+    .jumbo-card__content
+        .jumbo-card__description 
+            .jumbo-card__description-header
+                .jumbo-card__description-text Практический мастер-класс
+                .title.title--inverse Как создать подтянутое тело без изнуряющих тренировок
+                
+            .jumbo-card__description-button
+                +button-link('Принять участие бесплатно', 'button--full-width')
+        .jumbo-card__more
+            button.jumbo-card__more-button(onclick="this.classList.toggle('active')") Подробнее
+                span.jumbo-card__more-button-icon 
+                    +svg('16','16', 'angle-down')
+            .jumbo-card__more-text 
+                p С чего начать работу над телом в новом году, чтобы не бросить занятия, а прийти к желаемому результату.
+                p Вы узнаете, как сформировать привычку заниматься регулярно и выстроить тренировочный процесс так, чтобы двигаться к целям без откатов.

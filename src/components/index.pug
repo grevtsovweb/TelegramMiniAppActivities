@@ -1,0 +1,25 @@
+include ../components/mixins/svg
+include ../components/button/button
+include ../components/pill/pill
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        title Telegram Mini App 
+        meta(name="description", content="Telegram Mini App")
+        meta(name="keywords", content="Telegram Mini App")
+
+
+    body
+        .app
+            .app__content
+                include sections/activities-section/activities-section
+
+
+
+
+        
+        

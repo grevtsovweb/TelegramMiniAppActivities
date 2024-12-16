@@ -1,0 +1,25 @@
+.field
+    width: 100%
+
+
+    &__input
+        width: 100%
+        box-sizing: border-box
+        height: 48px
+        border: 1px solid $border-default
+        padding-left: $padding-16
+        padding-right: $padding-16
+        font-size: 14px
+        border-radius: $radius-8
+        color: $text-primary
+        font-family: $medium
+
+
+        &::placeholder
+            color: $text-tertiary
+            // font-family: $medium
+            font-size: 13px
+
+        &:focus
+            outline: 0
+            box-shadow: 0 0 0 3px rgba(65, 105, 244, .5)
