@@ -69,6 +69,24 @@
         font-size: 12px 
         line-height: 16px
         color: $text-primary-inverse
+        display: flex
+        align-items: center
+        justify-content: center
+        column-gap: 8px
+        position: relative
+
+    &__description-text-item
+        display: flex
+        align-items: center
+        column-gap: 8px
+
+        &:not(:first-child):before
+            content: ''
+            display: block
+            width: 3px
+            height: 3px
+            border-radius: 100%
+            background-color: $text-primary-inverse
 
     &__description-header
         text-align: center

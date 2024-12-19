@@ -1,6 +1,10 @@
 include mixins/svg
 include button/button
+include button/button-right
+include button/button-link-right
 include snackbar/snackbar
+include exercise-day/exercise-day
+include pill/pill
 include mixins/svg
 
 doctype html
@@ -16,8 +20,10 @@ html(lang="ru")
     body
         .app
             .app__content
-                include sections/greeting-section/greeting-section
+                include sections/activities-section/activities-section-registered
 
+                //- .app__snackbar 
+                //-     +snackbar('Ссылка отправлена в чат', 'snackbar__active')
 
 
 
